@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'AGHelveticaCyr';
+    src: url('../fonts/aghelveticacyrroman.ttf') format('ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/helveticaneuecyr_roman.otf') format('otf');
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+ol,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.d-block {
+    display: block;
+}
+
+input {
+    outline: none !important;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* banner */
+
+.banner {
+    background-image: url(../img/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.header-box__logo {}
+
+.header-box__nav {
+    display: flex;
+    
+}
+
+.nav-link a {
+    color: white;
+    text-transform: uppercase;
+    font-family: "AGHelveticaCyr", sans-serif;
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+.nav-link.last a {
+    margin-right: 0px;
+}
+
+.header-box__links {
+    display: flex;
+    align-items: center;
+}
+
+.header-box__links a {
+    margin-right: 20px;
+}
+
+.header-number {
+    margin-right: 0;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+.announcement {
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+}
+
+.announcement-box {
+    padding: 15px 0;
+}
+
+.announcement-box p {
+    text-align: center;
+    color: white;
+    font-family: "AGHelveticaCyr", sans-serif;
+    font-size: 26px;
+}
+
+.main-footer {
+    background: RGBA(9, 9, 9, 0);
+    background: linear-gradient(180deg, rgba(9, 9, 9, 0) 0%, rgba(9, 9, 9, 1) 100%);
+}
+
+.main__img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.main-box__buttons {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-box__button {
+    background-color: white;
+    padding: 20px 70px;
+    color: #000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+    max-height: 56px;
+    margin-right: 360px;
+}
+
+.round-banner__button {
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.round-text {
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    animation: rotateClockwise 10s linear infinite;
+}
+
+.round-button {
+    padding: 63px 63px;
+    border: 3px solid #7C7C7C;
+    background-color: rgba(217, 217, 217, .2);
+    border-radius: 300px;
+    position: relative;
+    z-index: 1;
+}
+
+/* @keyframes rotateClockwise {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+} */
+
+.location {
+    margin-top: 15px;
+    padding-bottom: 60px;
+}
+
+.location-box {
+    margin: 0 auto;
+    display: flex;
+    max-width: 620px;
+    align-items: center;
+}
+
+.location-box p {
+    color: white;
+    font-family: "AGHelveticaCyr", sans-serif;
+    font-size: 32px;
+}
+
+.location-box__pin {
+    margin-right: 15px;
+}
+
+.location a {
+    color: white;
+    font-family: "AGHelveticaCyr", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    max-width: 156px;
+    margin-top: 15px;
+}
