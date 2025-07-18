@@ -1,12 +1,25 @@
 @font-face {
     font-family: 'AGHelveticaCyr';
-    src: url('../fonts/aghelveticacyrroman.ttf') format('ttf');
+    src: url('../fonts/aghelveticacyrroman.ttf') format('truetype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/helveticaneuecyr_roman.otf') format('otf');
+    src: url('../fonts/helveticaneuecyr_roman.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BalkaraFreeCondensed';
+    src: url('../fonts/Balkara\ Condensed.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.otf') format('truetype');
     font-style: normal;
 }
 
@@ -35,6 +48,7 @@ button {
 
 body {
     overflow-x: hidden;
+    background-color: #333333;
 }
 
 .row {
@@ -92,8 +106,6 @@ button {
     align-items: center;
     padding: 40px 0;
 }
-
-.header-box__logo {}
 
 .header-box__nav {
     display: flex;
@@ -241,4 +253,94 @@ button {
     margin: 0 auto;
     max-width: 156px;
     margin-top: 15px;
+}
+
+/* about */
+
+.about {
+    margin-top: 100px;
+}
+
+.about__title {
+    margin-bottom: 100px;
+}
+
+.title {
+    font-family: 'BalkaraFreeCondensed', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.about-box__col {
+    max-width: 335px;
+}
+
+.col-title {
+    font-family: 'BalkaraFreeCondensed', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.col-text {
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    margin-top: 20px;
+}
+
+.col-text.first {
+    margin-top: 70px;
+}
+
+/*  */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.about-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-photo {}
+
+.card-billet {
+    border-radius: 10px;
+    padding: 3px 17px 3px 10px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+
+.card-billet__icon {
+    margin-right: 10px;
+}
+
+.card-billet__text {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.card-title {
+    font-family: 'BalkaraFreeCondensed', sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 120%;
 }
