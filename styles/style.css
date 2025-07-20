@@ -583,3 +583,63 @@ button {
 .circle-btn.active {
     background-color: #8AAF90;
 }
+
+/* contacts */
+
+.contacts {
+    margin-bottom: 60px;
+}
+
+.contacts__logo {
+    margin-top: 100px;
+}
+
+.contacts-box {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-box__title {
+    color: white;
+    font-family: 'HelveticaNeueCyr';
+    font-size: 25px;
+    line-height: 140%;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.contacts-box__text {
+    font-size: 20px;
+    font-family: "AGHelveticaCyr";
+    margin-bottom: 10px;
+    color: white;
+    line-height: 140%;
+}
+
+.contacts-box__socials {
+    margin-top: 104px;
+}
+
+.vk_icon {
+    margin-right: 30px;
+}
+
+.cart {
+    width: 690px;
+    height: 325px;
+}
+
+/* footer */
+
+.footer {
+    margin-bottom: 60px;
+}
+
+.footer__text {
+    color: white;
+    font-size: 12px;
+    font-family: "AGHelveticaCyr";
+    color: white;
+    line-height: 140%;
+}
