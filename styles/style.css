@@ -18,8 +18,14 @@
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Inter Regular';
     src: url('../fonts/Inter-Regular.otf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: url('../fonts/Inter-Medium.otf') format('truetype');
     font-style: normal;
 }
 
@@ -259,6 +265,7 @@ button {
 
 .about {
     margin-top: 100px;
+    position: relative;
 }
 
 .about__title {
@@ -302,7 +309,7 @@ button {
     margin-top: 70px;
 }
 
-/*  */
+/* cards */
 
 .about-cards {
     display: grid;
@@ -314,8 +321,6 @@ button {
     position: relative;
     cursor: pointer;
 }
-
-.card-photo {}
 
 .card-billet {
     border-radius: 10px;
@@ -335,7 +340,13 @@ button {
 .card-billet__text {
     color: white;
     font-size: 16px;
-    font-family: 'Inter';
+    font-family: 'Inter Regular';
+}
+
+.card-inner {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
 }
 
 .card-title {
@@ -344,3 +355,95 @@ button {
     font-size: 40px;
     line-height: 120%;
 }
+
+.card-subtitle {
+    color: white;
+    margin-top: 5px;
+    font-size: 25px;
+    line-height: 120%;
+    font-family: "AGHelveticaCyr", sans-serif;
+}
+
+.card-info {
+    display: flex;
+    width: 625px;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.card-info__col p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Inter Medium';
+    margin-bottom: 6px;
+}
+
+.card-uppercase {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* possibilities */
+
+.possibilities {
+    margin-top: 150px;
+}
+
+.possibilities__subtitle {
+    color: white;
+    font-size: 35px;
+    line-height: 120%;
+    font-family: "AGHelveticaCyr";
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.white-line {
+    width: 690px;
+    height: 1px;
+    background-color: white;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.possibilities-box {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.possibilities-box__col {
+    display: flex;
+    align-items: center;
+}
+
+.possibilities-box__col p {
+    color: white;
+    max-width: 198px;
+    font-family: "AGHelveticaCyr";
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.bucket-left {
+    position: absolute;
+    left: 0;
+    bottom: -350px;
+}
+
+.bowler-img {
+    position: absolute;
+    right: 0;
+    bottom: 490px;
+}
+
+.bucket-img__right {
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+}
+
+/*  */
