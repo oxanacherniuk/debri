@@ -446,4 +446,44 @@ button {
     bottom: -120px;
 }
 
-/*  */
+/* circumscribing */
+
+.circumscribing {
+    margin-top: 240px;
+    background-image: url(../img/circumscribing_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circumscribing-box {
+    display: flex;
+    padding: 80px 0;
+}
+
+.circumscribing-box__col {}
+
+.circumscribing-box__title {
+    text-align: left;
+}
+
+.circumscribing-box__text {
+    color: white;
+    line-height: 122%;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: "AGHelveticaCyr";
+}
+
+.circumscribing-images {
+    display: flex;
+    gap: 20px;
+}
+
+.circumscribing-images__col img {
+    display: block;
+}
+
+.circumscribing-img.last {
+    margin-top: 20px;
+}
