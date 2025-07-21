@@ -1,38 +1,42 @@
 @font-face {
     font-family: 'AGHelveticaCyr';
     src: url('../fonts/aghelveticacyrroman.ttf') format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/helveticaneuecyr_roman.otf');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BalkaraFreeCondensed';
-    src: url('../fonts/Balkara\ Condensed.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter Regular';
-    src: url('../fonts/Inter-Regular.otf') format('truetype');
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/helveticaneuecyr_roman.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BalkaraFreeCondensed';
+    src: url('../fonts/Balkara-Condensed.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Medium.otf') format('truetype');
+    src: url('../fonts/Inter-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter SemiBold';
-    src: url('../fonts/inter-semi-bold.otf') format('truetype');
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
 }
 

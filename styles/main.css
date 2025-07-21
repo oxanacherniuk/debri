@@ -221,7 +221,8 @@
 .card-billet__text {
     color: white;
     font-size: 16px;
-    font-family: 'Inter Regular';
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
 .card-inner {
@@ -257,7 +258,8 @@
 .card-info__col p {
     font-size: 16px;
     color: white;
-    font-family: 'Inter Medium';
+    font-family: 'Inter';
+    font-weight: 500;
     margin-bottom: 6px;
 }
 
@@ -448,7 +450,8 @@
 .client-date,
 .client-review {
     color: white;
-    font-family: 'Inter Regular';
+    font-family: 'Inter';
+    font-weight: 400;
     line-height: 120%;
 }
 
@@ -465,7 +468,8 @@
 
 .read-btn {
     color: #7C7C7C;
-    font-family: 'Inter Regular';
+    font-family: 'Inter';
+    font-weight: 400;
 }
 
 .circles-btns {
