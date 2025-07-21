@@ -1,0 +1,36 @@
+/* banner */
+
+.banner {
+    background-image: url(../img/lux-bg.png) !important;
+}
+
+.header-box__contacts a {
+    display: block;
+}
+
+.nav-link a {
+    margin-right: 30px;
+}
+
+.nav-link.last a {
+    margin-right: 0px;
+}
+
+.header-address {
+    margin-top: 5px;
+}
+
+.breadcrumbs {}
+
+.breadcrumbs-box {
+    display: flex;
+    max-width: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumbs-box__link, .breadcrumbs-box__link a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter SemiBold', sans-serif;
+}
