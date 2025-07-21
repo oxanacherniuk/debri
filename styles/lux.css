@@ -48,11 +48,12 @@
     margin-bottom: 68px;
 }
 
-.banner-info__opening p {
+.banner-info__opening p, .catalog-info__opening p {
     font-size: 16px;
     color: white;
     font-family: 'Inter Medium';
     margin-bottom: 6px;
+    font-weight: 400;
 }
 
 .banner-info__title {
@@ -166,4 +167,79 @@ span.color {
 
 .welcome-photo__7 {
     margin-top: 24px;
+}
+
+/* oasis */
+
+.oasis {
+    padding: 80px 0;
+    background-image: url(../img/oasis-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.oasis-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.oasis-box p {
+    color: white;
+    font-size: 18px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    line-height: 22px;
+    max-width: 650px;
+}
+
+/* catalog */
+
+.catalog {
+    margin: 120px 0;
+}
+
+.catalog__title {
+    text-align-last: left;
+}
+
+.catalog-box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-card {
+    cursor: pointer;
+}
+
+.catalog-card__top {
+    position: relative;
+}
+
+.catalog-card__top p {
+    text-transform: uppercase;
+    position: absolute;
+    font-family: 'BalkaraFreeCondensed', sans-serif;
+    color: white;
+    font-size: 30px;
+    line-height: 120%;
+    left: 16px;
+    bottom: 18px;
+    max-width: 240px;
+}
+
+.catalog-card__bottom {
+    margin-top: 18px;
+}
+
+.catalog-card__description {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+}
+
+.catalog-info__opening {
+    margin-top: 27px;
 }
