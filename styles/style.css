@@ -156,6 +156,11 @@ button {
     font-family: 'HelveticaNeueCyr', sans-serif;
 }
 
+.card-uppercase {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 /* contacts */
 
 .contacts {

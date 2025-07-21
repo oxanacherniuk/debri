@@ -1,7 +1,7 @@
 /* banner */
 
 .banner {
-    background-image: url(../img/lux-bg.png) !important;
+    background-image: url(../img/lux-bg.png);
 }
 
 .header-box__contacts a {
@@ -27,10 +27,36 @@
     max-width: 250px;
     align-items: center;
     justify-content: space-between;
+    margin-top: 38px;
 }
 
 .breadcrumbs-box__link, .breadcrumbs-box__link a {
     color: white;
     font-size: 14px;
     font-family: 'Inter SemiBold', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner-info {
+    margin-top: 265px;
+}
+
+.banner-info__opening {
+    margin-top: 50px;
+}
+
+.banner-info__opening p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Inter Medium';
+    margin-bottom: 6px;
+}
+
+.banner-info__title {
+    text-transform: uppercase;
+    font-family: 'BalkaraFreeCondensed', sans-serif;
+    color: white;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 120%;
 }
