@@ -24,8 +24,9 @@
 }
 
 @font-face {
-    font-family: 'Inter Medium';
+    font-family: 'Inter';
     src: url('../fonts/Inter-Medium.otf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
