@@ -11,20 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let autoSlideInterval;
     const slideIntervalTime = 5000;
     let isAnimating = false;
-    const animationDuration = 500; // Длительность анимации в мс
+    const animationDuration = 500; 
 
-    // Создаем обертку для слайдов
     const slidesWrapper = document.createElement('div');
     slidesWrapper.className = 'slides-wrapper';
     slider.innerHTML = '';
     slider.appendChild(slidesWrapper);
     
-    // Переносим слайды в обертку
     slides.forEach(slide => {
         slidesWrapper.appendChild(slide);
     });
 
-    // Создаем точки навигации
     function createDots() {
         dotsContainer.innerHTML = '';
         const dotsCount = Math.ceil(slideCount / slidesToShow);
@@ -38,19 +35,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Инициализация слайдера
     function initSlider() {
-        // Настройка CSS для анимации
         slider.style.overflow = 'hidden';
         slidesWrapper.style.display = 'flex';
         slidesWrapper.style.transition = `transform ${animationDuration}ms ease`;
         
         createDots();
-        updateSliderPosition(false); // Без анимации при инициализации
+        updateSliderPosition(false);
         startAutoSlide();
     }
 
-    // Обновление позиции слайдера с анимацией
     function updateSliderPosition(animate = true) {
         if (isAnimating) return;
         isAnimating = true;
@@ -61,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (animate) {
             slidesWrapper.style.transform = `translateX(${offset}px)`;
             
-            // Завершение анимации
             setTimeout(() => {
                 isAnimating = false;
             }, animationDuration);
@@ -69,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
             slidesWrapper.style.transition = 'none';
             slidesWrapper.style.transform = `translateX(${offset}px)`;
             
-            // Возвращаем transition после применения позиции
             setTimeout(() => {
                 slidesWrapper.style.transition = `transform ${animationDuration}ms ease`;
                 isAnimating = false;
@@ -79,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateDots();
     }
     
-    // Обновление активной точки
     function updateDots() {
         const dots = document.querySelectorAll('.circle-btn');
         const activeDotIndex = Math.floor(currentSlide / slidesToShow);
@@ -92,18 +83,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Переход к следующей группе слайдов
     function nextSlide() {
         if (isAnimating) return;
         
         currentSlide = (currentSlide + slidesToShow) % slideCount;
         if (currentSlide + slidesToShow > slideCount) {
-            currentSlide = 0; // Возврат к началу если не хватает слайдов
+            currentSlide = 0; 
         }
         updateSliderPosition();
     }
     
-    // Переход к предыдущей группе слайдов
     function prevSlide() {
         if (isAnimating) return;
         
@@ -111,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateSliderPosition();
     }
     
-    // Переход к конкретному слайду
     function goToSlide(index) {
         if (isAnimating) return;
         
@@ -119,18 +107,15 @@ document.addEventListener('DOMContentLoaded', function() {
         updateSliderPosition();
     }
     
-    // Запуск автоматической прокрутки
     function startAutoSlide() {
         stopAutoSlide();
         autoSlideInterval = setInterval(nextSlide, slideIntervalTime);
     }
     
-    // Остановка автоматической прокрутки
     function stopAutoSlide() {
         clearInterval(autoSlideInterval);
     }
     
-    // Обработчики событий для кнопок
     nextBtn.addEventListener('click', function() {
         stopAutoSlide();
         nextSlide();
@@ -143,10 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
         startAutoSlide();
     });
     
-    // Остановка автоматической прокрутки при наведении на слайдер
     slider.addEventListener('mouseenter', stopAutoSlide);
     slider.addEventListener('mouseleave', startAutoSlide);
     
-    // Инициализация слайдера
     initSlider();
 });
