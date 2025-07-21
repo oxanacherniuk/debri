@@ -133,14 +133,6 @@
     margin-bottom: 100px;
 }
 
-.title {
-    font-family: 'BalkaraFreeCondensed', sans-serif;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    line-height: 60px;
-}
-
 .about-box {
     display: flex;
     justify-content: space-between;

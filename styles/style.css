@@ -97,6 +97,14 @@ button {
     transition: 0.2s;
 }
 
+.title {
+    font-family: 'BalkaraFreeCondensed', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+
 /* banner */
 
 .banner {

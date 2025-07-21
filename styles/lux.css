@@ -108,3 +108,62 @@
     border: 1px solid white;
     padding: 23px 50px;
 }
+
+/* welcome */
+
+.welcome {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+span.color {
+    color: #8AAF90;
+}
+
+.welcome__subtitle {
+    font-size: 35px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    color: white;
+    line-height: 150%;
+    text-align: center;
+}
+
+.welcome-box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-box li {
+    max-width: 175px;
+    color: white;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.photo-box {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.photo-box__col {
+    gap: 20px;
+}
+
+.photo-box__row {
+    gap: 20px;
+}
+
+.photo-box__row.lower {
+    margin-top: 30px;
+}
+
+.welcome-photo__6 {
+    margin-top: 20px;
+}
+
+.welcome-photo__7 {
+    margin-top: 24px;
+}
