@@ -39,10 +39,13 @@
 
 .banner-info {
     margin-top: 265px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .banner-info__opening {
     margin-top: 50px;
+    margin-bottom: 68px;
 }
 
 .banner-info__opening p {
@@ -59,4 +62,47 @@
     font-size: 100px;
     font-weight: 400;
     line-height: 120%;
+}
+
+.banner-info__btn {
+    background-color: #8AAF90;
+    padding: 20px 70px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+    max-height: 56px;
+}
+
+.main-box__button:hover {
+    background-color: #8AAF90;
+    color: white;
+}
+
+.banner-info__col {}
+
+.stanchion {}
+
+.stanchion-line {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.stanchion-line.last {
+    margin-bottom: 0;
+}
+
+.stanchion-line img {
+    width: 40px;
+    height: 40px;
+}
+
+.stanchion-line p {
+    color: white;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 20px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    max-width: 271px;
 }
