@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="main-box">
                     <div class="main-box__buttons">
-                        <button class="main-box__button">подобрать отдых</button>
+                        <button class="main-box__button" onclick="document.location='main.html#about'">подобрать отдых</button>
                         <div class="round-banner__button">
                             <img src="img/round_text.svg" class="round-text">
                             <button class="round-button">
@@ -64,33 +64,32 @@
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <h2 class="about__title title">
                 Банно-оздоровительный комплекс дебри - <br>
                 масштабные пространства для больших компаний.
             </h2>
             <div class="about-box">
-                <div class="about-box__col">
+                <div class="about-box__col" data-filter="sauna">
                     <p class="col-title">Сауны</p>
                     <p class="col-text first">5 саун с индивидуальным дизайном и оснащением</p>
                 </div>
-                <div class="about-box__col">
+                <div class="about-box__col" data-filter="house">
                     <p class="col-title">гостевой <br> домик</p>
-                    <p class="col-text">Большой банкетный зал <br> с мангальной зоной, сауна, <br>
-                    4 спальни</p>
+                    <p class="col-text">Большой банкетный зал <br> с мангальной зоной, сауна, <br>4 спальни</p>
                 </div>
-                <div class="about-box__col">
+                <div class="about-box__col" data-filter="rooms">
                     <p class="col-title">гостевые <br> номера</p>
-                    <p class="col-text">3 больших гостевых номера <br> с разными нтерьерами</p>
+                    <p class="col-text">3 больших гостевых номера <br> с разными интерьерами</p>
                 </div>
-                <div class="about-box__col">
+                <div class="about-box__col" data-filter="sport">
                     <p class="col-title">Спортивная <br> комната</p>
                     <p class="col-text">Бильярдный теннисный стол <br> на сланцевом камне, домашний <br>кинотеатр</p>
                 </div>
             </div>
             <div class="about-cards">
-                <div class="about-card">
+                <a class="about-card sauna">
                     <img src="img/sauna_photo1.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">
@@ -109,8 +108,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card sauna">
                     <img src="img/sauna_photo2.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">
@@ -129,8 +128,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card sauna">
                     <img src="img/sauna_photo3.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">
@@ -149,8 +148,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card sauna">
                     <img src="img/sauna_photo4.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">
@@ -169,8 +168,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card sauna">
                     <img src="img/sauna_photo5.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">
@@ -189,8 +188,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card house">
                     <img src="img/sauna_photo6.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">
@@ -207,8 +206,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card rooms">
                     <img src="img/sauna_photo7.png" alt="гостевой номер" class="card-photo">
                     <div class="card-inner">
                         <p class="card-title">гостевой номер</p>
@@ -222,8 +221,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card rooms">
                     <img src="img/sauna_photo8.png" alt="гостевой номер" class="card-photo">
                     <div class="card-inner">
                         <p class="card-title">гостевой номер</p>
@@ -237,8 +236,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-card">
+                </a>
+                <a class="about-card sport">
                     <img src="img/sauna_photo9.png" alt="Спортивно-игровая комната" class="card-photo">
                     <div class="card-inner">
                         <p class="card-title">Спортивно-игровая комната</p>
@@ -251,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="possibilities">
                 <hr class="white-line">
@@ -569,5 +568,6 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/form.js"></script>
+    <script src="scripts/sorting.js"></script>
 </body>
 </html>
