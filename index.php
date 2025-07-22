@@ -206,7 +206,7 @@
                 </div>
             </div>
             <div class="about-cards">
-                <a class="about-card sauna" href="saunalux.html">
+                <a class="about-card sauna" href="saunalux.php">
                     <img src="img/sauna_photo1.png" class="card-photo">
                     <div class="card-billet">
                         <img src="img/people_icon.svg" class="card-billet__icon">

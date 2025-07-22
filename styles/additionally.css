@@ -1,7 +1,10 @@
 /* banner */
 
-.banner {
+.banner-image {
     background-image: url(../img/additionally-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .header-box__contacts a {
@@ -25,7 +28,7 @@
 }
 
 .back {
-    padding-top: 60px;
+    padding-top: 170px;
 }
 
 .back-btn {

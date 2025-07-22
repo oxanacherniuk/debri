@@ -35,7 +35,7 @@
         <div class="breadcrumbs">
             <div class="container">
                 <ul class="breadcrumbs-box">
-                    <li class="breadcrumbs-box__link"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumbs-box__link"><a href="index.php">Главная</a></li>
                     <li class="breadcrumbs-box__link">/</li>
                     <li class="breadcrumbs-box__link"><a href="" class="breadcrumbs-box__link">Сауны</a></li>
                     <li class="breadcrumbs-box__link">/</li>
@@ -75,7 +75,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="stanchion__btn" onclick="document.location='additionally.html'">
+                        <button class="stanchion__btn" onclick="document.location='additionally.php'">
                             дополнительные услуги
                         </button>
                     </div>

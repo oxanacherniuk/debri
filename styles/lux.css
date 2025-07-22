@@ -16,22 +16,6 @@
     margin-right: 0px;
 }
 
-.header-address {
-    margin-top: 5px;
-    position: relative;
-    display: inline-block;
-}
-
-.header-address::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-}
-
 .breadcrumbs-box {
     display: flex;
     max-width: 250px;

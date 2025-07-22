@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <title>Дополнительные услуги</title>
 </head>
 <body>
-    <div class="banner">
+    <header class="banner">
         <div class="header">
             <div class="container">
                 <div class="header-box">
@@ -33,9 +33,13 @@
                 </div>
             </div>
         </div>
-        <div class="banner-black">
-            <div class="back container">
-                <button class="back-btn" onclick="document.location='saunalux.html'">
+    </header>
+
+    <main>
+        <section class="banner-image">
+            <div class="banner-black">
+                <div class="back container">
+                <button class="back-btn" onclick="document.location='saunalux.php'">
                     <img src="img/back-btn.svg" alt="Назад">
                 </button>
             </div>
@@ -115,40 +119,41 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+        </section>
 
-    <div class="contacts">
-        <div class="container">
-            <img src="img/logo_header.svg" alt="ДЕБРИ" class="contacts__logo">
-            <div class="contacts-box">
-                <div class="contacts-box__col first">
-                    <p class="contacts-box__title">Адрес</p>
-                    <p class="contacts-box__text">г. Ульяновск, <br> ул. Галактионова, 41.</p>
-                    <p class="contacts-box__text">тел ⁠+7 927 270-92-08</p>
-                    <p class="contacts-box__text">debrisaun@mail.ru</p>
-                    <div class="contacts-box__socials">
-                        <a href="" class="vk_icon"><img src="img/vk_icon.svg" alt="VK"></a>
-                        <a href=""><img src="img/tg_icon.svg" alt="Telegram"></a>
+        <section class="contacts">
+            <div class="container">
+                <img src="img/logo_header.svg" alt="ДЕБРИ" class="contacts__logo">
+                <div class="contacts-box">
+                    <div class="contacts-box__col first">
+                        <p class="contacts-box__title">Адрес</p>
+                        <p class="contacts-box__text">г. Ульяновск, <br> ул. Галактионова, 41.</p>
+                        <p class="contacts-box__text">тел⁠+7 927 270-92-08</p>
+                        <p class="contacts-box__text">debrisaun@mail.ru</p>
+                        <div class="contacts-box__socials">
+                            <a href="" class="vk_icon"><img src="img/vk_icon.svg" alt="VK"></a>
+                            <a href=""><img src="img/tg_icon.svg" alt="Telegram"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="contacts-box__col">
-                    <div style="position:relative;overflow:hidden;">
-                        <a href="https://yandex.ru/maps/org/debri/148293410018/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Дебри</a>
-                        <a href="https://yandex.ru/maps/195/ulyanovsk/category/guest_house/131994109947/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Гостевой дом в Ульяновске</a>
-                        <iframe class="cart"
-                            src="https://yandex.ru/map-widget/v1/?ll=48.381004%2C54.332376&mode=poi&poi%5Bpoint%5D=48.379990%2C54.332246&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D148293410018&z=18.3"
-                            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    <div class="contacts-box__col">
+                        <div style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/org/debri/148293410018/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Дебри</a>
+                            <a href="https://yandex.ru/maps/195/ulyanovsk/category/guest_house/131994109947/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Гостевой дом в Ульяновске</a>
+                            <iframe class="cart"
+                                src="https://yandex.ru/map-widget/v1/?ll=48.381004%2C54.332376&mode=poi&poi%5Bpoint%5D=48.379990%2C54.332246&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D148293410018&z=18.3"
+                                frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
                     </div>
-                </div>
-                <div class="contacts-box__col">
-                    <img src="img/contacts_img.png" alt="ДЕБРИ" class="contacts-box__photo">
+                    <div class="contacts-box__col">
+                        <img src="img/contacts_img.png" alt="ДЕБРИ" class="contacts-box__photo">
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
     
     <footer class="footer">
         <div class="container">

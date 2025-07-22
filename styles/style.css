@@ -113,13 +113,14 @@ button {
 /* banner */
 
 .banner {
-    background-image: url(../img/bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+    /* background-color: transparent; */
 }
 
 .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -167,6 +168,22 @@ button {
     color: white;
     font-size: 16px;
     font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+.header-address {
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.header-address::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
 }
 
 .card-uppercase {
