@@ -1,0 +1,74 @@
+/* banner */
+
+.banner {
+    background-image: url(../img/additionally-bg.png);
+}
+
+.header-box__contacts a {
+    display: block;
+}
+
+.nav-link a {
+    margin-right: 30px;
+}
+
+.nav-link.last a {
+    margin-right: 0px;
+}
+
+.header-address {
+    margin-top: 5px;
+}
+
+.banner-black {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .3) 0%, rgba(9, 9, 9, .8) 50%);
+}
+
+.back {
+    padding-top: 60px;
+}
+
+.back-btn {
+    background-color: transparent;
+}
+
+.banner-services {
+    margin-top: 50px;
+}
+
+.banner-services__subtitle {
+    color: white;
+    margin: auto;
+    line-height: 136%;
+    text-align: center;
+    max-width: 945px;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: "AGHelveticaCyr";
+}
+
+.services-box {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 90px;
+}
+
+.services-card {
+    display: flex;
+}
+
+.service-img {
+    margin-right: 40px;
+    height: 70px;
+    width: 70px;
+}
+
+.services-card__texts p {
+    font-size: 22px;
+    line-height: 136%;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "AGHelveticaCyr";
+}

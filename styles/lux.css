@@ -122,6 +122,111 @@
     color: #8AAF90;
 }
 
+/*  */
+
+.reservation {
+    display: none;
+}
+
+.reservation-inner {
+    padding: 60px 0;
+    background-image: url(../img/reservation-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.reservation-inner__close {
+    background-color: transparent;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.reservation-inner__title {
+    font-size: 45px;
+}
+
+.reservation-inner__subtitle {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 55px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    max-width: 497px;
+}
+
+.reservation-form {}
+
+.reservation-form__inputs {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 800px;
+    gap: 55px;
+}
+
+.reservation-form__input {
+    width: 360px;
+    height: 60px;
+    color: #7C7C7C;
+    background-color: #fff;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+select.reservation-form__input {
+    color: #333;
+}
+
+.agreement-box {
+    justify-content: center;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.agreement-square {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.agreement-text {
+    color: white;
+    max-width: 580px;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    margin-left: 20px;
+}
+
+.reservation-form__send-btn {
+    display: block;
+    margin: auto;
+    margin-top: 55px;
+    background-color: #8AAF90;
+    padding: 20px 120px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+}
+
+.reservation-form__send-btn:hover {
+    background-color: white;
+    color: #000;
+}
+
 /* welcome */
 
 .welcome {

@@ -75,11 +75,46 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="stanchion__btn">
+                        <button class="stanchion__btn" onclick="document.location='additionally.html'">
                             дополнительные услуги
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reservation">
+        <div class="container">
+            <div class="reservation-inner">
+                <button class="reservation-inner__close">
+                    <img src="img/close-light.svg" alt="Закрыть" srcset="">
+                </button>
+                <h2 class="reservation-inner__title title">Забронировать</h2>
+                <p class="reservation-inner__subtitle">Оставьте заявку и администратор предложит Вам
+                удобную дату и время для бронирования</p>
+                <form action="" class="reservation-form">
+                    <div class="reservation-form__inputs">
+                        <select class="reservation-form__input" name="city" id="city-select">
+                            <option value="lux">Сауна Люкс</option>
+                            <option value="banya">Русская баня на дровах</option>
+                            <option value="bigsayna">Большая сауна</option>
+                            <option value="littlesayna">Малая сауна</option>
+                            <option value="grechsyna">Греческая сауна</option>
+                            <option value="gosthouse">Гостевой домик</option>
+                            <option value="gostnom">Гостевой номер</option>
+                            <option value="sportroom">Спортивно-игровая комната</option>
+                        </select>
+                        <input type="text" placeholder="Введите имя" class="reservation-form__input">
+                        <input type="text" placeholder="Количество гостей" class="reservation-form__input">
+                        <input type="tel" placeholder="+7 (___) - __ - __" class="reservation-form__input">
+                    </div>
+                    <div class="agreement-box">
+                        <input class="agreement-square" type="checkbox" id="agreement" name="agreement" />
+                        <label class="agreement-text" for="agreement">Я согласен(на) на обработку персональных данных и принимаю условия политики конфиденциальности.</label>
+                    </div>
+                    <button class="reservation-form__send-btn">Отправить</button>
+                </form>
             </div>
         </div>
     </div>
