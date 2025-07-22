@@ -95,28 +95,48 @@
                         <h2 class="reservation-inner__title title">Забронировать</h2>
                         <p class="reservation-inner__subtitle">Оставьте заявку и администратор предложит Вам
                             удобную дату и время для бронирования</p>
-                        <form action="" class="reservation-form">
+                        <form action="" class="reservation-form" id="bookingForm">
                             <div class="reservation-form__inputs">
-                                <select class="reservation-form__input" name="city" id="city-select">
-                                    <option value="lux">Сауна Люкс</option>
-                                    <option value="banya">Русская баня на дровах</option>
-                                    <option value="bigsayna">Большая сауна</option>
-                                    <option value="littlesayna">Малая сауна</option>
-                                    <option value="grechsyna">Греческая сауна</option>
-                                    <option value="gosthouse">Гостевой домик</option>
-                                    <option value="gostnom">Гостевой номер</option>
-                                    <option value="sportroom">Спортивно-игровая комната</option>
-                                </select>
-                                <input type="text" placeholder="Введите имя" class="reservation-form__input">
-                                <input type="text" placeholder="Количество гостей" class="reservation-form__input">
-                                <input type="tel" placeholder="+7 (___) - __ - __" class="reservation-form__input">
+                                <div class="input-wrapper">
+                                    <select class="reservation-form__input" name="service" id="city-select" required>
+                                        <option value="">Выберите услугу</option>
+                                        <option value="lux">Сауна Люкс</option>
+                                        <option value="banya">Русская баня на дровах</option>
+                                        <option value="bigsayna">Большая сауна</option>
+                                        <option value="littlesayna">Малая сауна</option>
+                                        <option value="grechsyna">Греческая сауна</option>
+                                        <option value="gosthouse">Гостевой домик</option>
+                                        <option value="gostnom">Гостевой номер</option>
+                                        <option value="sportroom">Спортивно-игровая комната</option>
+                                    </select>
+                                    <div class="error-message"></div>
+                                </div>
+    
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Введите имя" class="reservation-form__input" name="name"
+                                        id="name" required minlength="2">
+                                    <div class="error-message"></div>
+                                </div>
+    
+                                <div class="input-wrapper">
+                                    <input type="number" placeholder="Количество гостей" class="reservation-form__input"
+                                        name="guests" id="guests" required min="1" max="20">
+                                    <div class="error-message"></div>
+                                </div>
+    
+                                <div class="input-wrapper">
+                                    <input type="tel" placeholder="+7 (___) ___-____" class="reservation-form__input"
+                                        name="phone" id="phone" required>
+                                    <div class="error-message"></div>
+                                </div>
                             </div>
                             <div class="agreement-box">
-                                <input class="agreement-square" type="checkbox" id="agreement" name="agreement" />
+                                <input class="agreement-square" type="checkbox" id="agreement" name="agreement" required>
                                 <label class="agreement-text" for="agreement">Я согласен(на) на обработку персональных
                                     данных и принимаю условия политики конфиденциальности.</label>
+                                <div class="error-message agreement-error"></div>
                             </div>
-                            <button class="reservation-form__send-btn">Отправить</button>
+                            <button type="submit" class="reservation-form__send-btn">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -319,6 +339,7 @@
     </div>
     <script src="scripts/form.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/validation.js"></script>
     <!-- <script src="scripts/hover.js"></script> -->
 </body>
 </html>

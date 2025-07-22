@@ -103,7 +103,7 @@
                                 <button class="quiz-nav back">
                                     <img src="img/quiz-arrow_left.svg" alt="Назад">
                                 </button>
-                                <button class="quiz-nav">
+                                <button class="quiz-nav" id="lastNavFirst">
                                     <p>Далее</p>
                                     <img src="img/quiz-arrow_right.svg" alt="Далее">
                                 </button>
@@ -111,6 +111,68 @@
                             <div class="first-step__col">
                                 <img src="img/first-step_1.png" alt="Дебри">
                                 <img src="img/first-step_2.png" style="margin-bottom: 0;" alt="Дебри">
+                            </div>
+                        </div>
+                        <div class="second-step row">
+                            <div class="first-step__col">
+                                <p class="steps-text">Шаг 2 из 4</p>
+                                <h2 class="quiz-box__title title">Сколько человек<br>будет в сауне? </h2>
+                                <div class="first-step__buttons">
+                                    <button class="first-step__btn">До 6 человек</button>
+                                    <button class="first-step__btn">6 - 10 человек</button>
+                                    <button style="margin-bottom: 0;" class="first-step__btn">Более 10 человек</button>
+                                </div>
+                            </div>
+                            <div class="first-step__col row average">
+                                <button class="quiz-nav back">
+                                    <img src="img/quiz-arrow_left.svg" alt="Назад">
+                                </button>
+                                <button class="quiz-nav" id="secondNavFirst">
+                                    <p>Далее</p>
+                                    <img src="img/quiz-arrow_right.svg" alt="Далее">
+                                </button>
+                            </div>
+                            <img src="img/second-step_img.png" alt="Дебри">
+                        </div>
+                        <div class="third-step">
+                            <div class="first-step__col">
+                                <p class="steps-text">Шаг 3 из 4</p>
+                                <h2 class="quiz-box__title title">какой тип сауны
+                                <br>вы предпочитаете?</h2>
+                                <div class="third-step__buttons">
+                                    <button class="first-step__btn left">Русская баня на дровах</button>
+                                    <button class="first-step__btn left">Греческая сауна</button>
+                                    <button style="margin-bottom: 0;" class="first-step__btn left">Турецкий хамам</button>
+                                    <button style="margin-bottom: 0;" class="first-step__btn left">Комбинированный вариант</button>
+                                </div>
+                            </div>
+                            <div class="first-step__col row average average-third">
+                                <button class="quiz-nav back">
+                                    <img src="img/quiz-arrow_left.svg" alt="Назад">
+                                </button>
+                                <button class="quiz-nav" id="thirdNavFirst">
+                                    <p>Далее</p>
+                                    <img src="img/quiz-arrow_right.svg" alt="Далее">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="fourth-step">
+                            <div class="first-step__col">
+                                <p class="steps-text">Шаг 4 из 4</p>
+                                <h2 class="quiz-box__title fourth title">Всего один шаг до подбора лучшего варианта <br> для отдыха вашей компании
+                                </h2>
+                                <p class="fourth-step__text">Оставьте свои контактные данные и вы получите персональное предложение в течение 30 минут</p>
+                                <form action="" class="fourth-step__form">
+                                    <input placeholder="Введите имя" type="text" class="fourth-step__input">
+                                    <input placeholder="+7 (___) - __ - __" type="text" class="fourth-step__input">
+                                    <button class="fourth-step__btn">отправить</button>
+                                    <div class="agreement-box">
+                                        <input class="agreement-square" type="checkbox" id="agreement" name="agreement" required>
+                                        <label class="agreement-text" for="agreement">Я согласен(на) на обработку персональных
+                                            данных и принимаю условия политики конфиденциальности.</label>
+                                        <div class="error-message agreement-error"></div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -625,5 +687,6 @@
     <script src="scripts/form.js"></script>
     <script src="scripts/sorting.js"></script>
     <script src="scripts/modalQuiz.js"></script>
+    <script src="scripts/modalNav.js"></script>
 </body>
 </html>
