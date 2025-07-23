@@ -1,6 +1,15 @@
 /* banner */
+.banner {
+    background-image: url(../img/bg.png);
+    z-index: 100;
+}
+
+.annons {
+    padding-top: 155px;
+    overflow: hidden;
+}
+
 .announcement {
-    margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -8,13 +17,28 @@
 
 .announcement-box {
     padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .announcement-box p {
     text-align: center;
     color: white;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 26px;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .main-footer {
@@ -43,6 +67,7 @@
     text-transform: uppercase;
     font-family: 'HelveticaNeueCyr', sans-serif;
     font-size: 16px;
+    font-weight: 500;
     max-height: 56px;
     margin-right: 360px;
 }
@@ -56,6 +81,8 @@
     position: relative;
     cursor: pointer;
     width: fit-content;
+    display: inline-block;
+    animation: rotateClockwise 15s linear infinite;
 }
 
 .round-text {
@@ -63,27 +90,44 @@
     top: 45%;
     left: 49%;
     transform: translate(-50%, -50%);
-    animation: rotateClockwise 10s linear infinite;
+    pointer-events: none;
 }
 
 .round-button {
+    position: relative;
+    z-index: 2;
     padding: 63px;
     border: 3px solid #7C7C7C;
     background-color: rgba(217, 217, 217, .2);
     border-radius: 300px;
-    position: relative;
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* @keyframes rotateClockwise {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
+.static-icon {
+    animation: rotateCounterClockwise 15s linear infinite;
+}
+
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
     }
 
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
+    100% {
+        transform: rotate(360deg);
     }
-} */
+}
+
+@keyframes rotateCounterClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
 
 .location {
     margin-top: 15px;
@@ -99,7 +143,7 @@
 
 .location-box p {
     color: white;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 32px;
 }
 
@@ -109,7 +153,7 @@
 
 .location a {
     color: white;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     display: block;
@@ -180,7 +224,13 @@
 }
 
 .second-step {
+    margin-top: 30px;
     align-items: flex-end;
+    justify-content: space-between;
+}
+
+.third-step {
+    margin-top: 30px;
 }
 
 .first-step__col img {
@@ -190,7 +240,7 @@
 
 .steps-text {
     color: white;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 16px;
     line-height: 136%;
     margin-bottom: 30px;
@@ -224,7 +274,7 @@
 
 .quiz-nav p {
     color: white;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 24px;
     line-height: 136%;
 }
@@ -245,7 +295,7 @@
     padding: 12px 50px 12px 30px;
     border-radius: 5px;
     font-size: 24px;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     line-height: 136%;
     margin-bottom: 23px;
     width: 430px;
@@ -262,7 +312,7 @@
     margin-top: 50px;
     line-height: 136%;
     color: white;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 24px;
     max-width: 617px;
     margin-right: 100px;
@@ -278,7 +328,7 @@
     height: 60px;
     color: #7C7C7C;
     background-color: #fff;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     padding: 20px 30px;
     border: none;
     border-radius: 5px;
@@ -304,7 +354,7 @@
 
 .agreement-box {
     justify-content: flex-start;
-    margin-top: 45px;
+    margin-top: 30px;
     display: flex;
     align-items: center;
 }
@@ -319,7 +369,7 @@
 .agreement-text {
     color: white;
     max-width: 580px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 16px;
     line-height: 120%;
     margin-left: 20px;
@@ -411,7 +461,7 @@
     color: white;
     font-size: 20px;
     line-height: 26px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     margin-top: 20px;
 }
 
@@ -471,7 +521,7 @@
 .card-billet__text {
     color: white;
     font-size: 16px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
@@ -495,7 +545,7 @@
     margin-top: 5px;
     font-size: 25px;
     line-height: 120%;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
 }
 
 .card-info {
@@ -508,7 +558,7 @@
 .card-info__col p {
     font-size: 16px;
     color: white;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     margin-bottom: 6px;
 }
@@ -523,7 +573,7 @@
     color: white;
     font-size: 35px;
     line-height: 120%;
-    font-family: "AGHelveticaCyr";
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-weight: 400;
     margin-top: 10px;
     text-align: center;
@@ -552,7 +602,7 @@
 .possibilities-box__col p {
     color: white;
     max-width: 198px;
-    font-family: "AGHelveticaCyr";
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     margin-left: 20px;
     font-size: 24px;
     line-height: 120%;
@@ -589,6 +639,7 @@
 .circumscribing-box {
     display: flex;
     padding: 80px 0;
+    justify-content: space-between;
 }
 
 .circumscribing-box__title {
@@ -600,7 +651,8 @@
     line-height: 122%;
     margin-top: 40px;
     font-size: 18px;
-    font-family: "AGHelveticaCyr";
+    font-family: "AGHelveticaCyr Roman", sans-serif;
+    max-width: 640px;
 }
 
 .circumscribing-images {
@@ -700,7 +752,7 @@
 .client-date,
 .client-review {
     color: white;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 120%;
 }
@@ -718,7 +770,7 @@
 
 .read-btn {
     color: #7C7C7C;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 

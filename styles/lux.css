@@ -16,12 +16,16 @@
     margin-right: 0px;
 }
 
+.breadcrumbs {
+    padding-top: 130px;
+}
+
 .breadcrumbs-box {
     display: flex;
     max-width: 250px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 38px;
+    padding-top: 38px;
 }
 
 .breadcrumbs-box__link, .breadcrumbs-box__link a {
@@ -48,7 +52,7 @@
 .banner-info__opening p, .catalog-info__opening p {
     font-size: 16px;
     color: white;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     margin-bottom: 6px;
     font-weight: 400;
@@ -102,7 +106,7 @@
     font-size: 20px;
     line-height: 26px;
     margin-left: 20px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     max-width: 271px;
 }
 
@@ -180,7 +184,7 @@
     margin: auto;
     margin-top: 15px;
     margin-bottom: 55px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     max-width: 497px;
 }
 
@@ -198,7 +202,7 @@
     height: 60px;
     color: #7C7C7C;
     background-color: #fff;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     padding: 20px 30px;
     border: none;
     border-radius: 5px;
@@ -207,6 +211,34 @@
 
 select.reservation-form__input {
     color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.styled-select select option {
+    padding: 8px 15px;
+    background-color: white;
+    color: #333;
+}
+
+.styled-select select option:hover {
+    background-color: transparent !important;
+    text-decoration: underline;
+    color: #333;
+}
+
+.styled-select select:focus {
+    outline: none;
+    border-color: #666;
+}
+
+@-moz-document url-prefix() {
+    .styled-select select {
+        padding-right: 30px;
+        /* Делаем место для стрелки */
+    }
 }
 
 .agreement-box {
@@ -226,7 +258,7 @@ select.reservation-form__input {
 .agreement-text {
     color: white;
     max-width: 580px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 16px;
     line-height: 120%;
     margin-left: 20px;
@@ -261,40 +293,11 @@ select.reservation-form__input {
     background-image: url(../img/select-polygon.svg);
     background-repeat: no-repeat;
     background-position: right 40px center;
-    background-size: 15px 15px;
     padding-right: 65px;
 }
 
 select.reservation-form__input::-ms-expand {
     display: none;
-}
-
-.agreement-square {
-    -webkit-appearance: none;
-    -moz-appearance: none; /* убираем стандартный вид */
-    appearance: none;
-    width: 22px;
-    height: 22px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    position: relative;
-    vertical-align: middle;
-}
-
-.agreement-square:checked::before {
-    content: '';
-    position: absolute;
-    left: 5px;
-    top: 3px;
-    width: 9px;
-    height: 9px;
-    border: solid white;
-    border-width: 0 1px 1px 0;
-    transform: rotate(45deg);
 }
 
 .input-wrapper {
@@ -307,7 +310,7 @@ select.reservation-form__input::-ms-expand {
     font-size: 14px;
     margin-top: 8px;
     display: none;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
 }
 
 .agreement-error {
@@ -335,7 +338,7 @@ span.color {
 
 .welcome__subtitle {
     font-size: 35px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     color: white;
     line-height: 150%;
     text-align: center;
@@ -350,7 +353,7 @@ span.color {
 .welcome-box li {
     max-width: 175px;
     color: white;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 24px;
     line-height: 120%;
 }
@@ -414,7 +417,7 @@ span.color {
 }
 
 .pool-info__left p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: white;
@@ -424,7 +427,7 @@ span.color {
 .pool-info__right p {
     max-width: 283px;
     color: white;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 24px;
     margin-top: 32px;
@@ -469,7 +472,7 @@ span.color {
 .oasis-box p {
     color: white;
     font-size: 18px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     line-height: 22px;
     max-width: 650px;
 }
@@ -518,7 +521,7 @@ span.color {
     color: white;
     font-size: 16px;
     margin-bottom: 8px;
-    font-family: 'AGHelveticaCyr', sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
 }
 
 .catalog-info__opening {

@@ -1,5 +1,4 @@
 /* banner */
-
 .banner-image {
     background-image: url(../img/additionally-bg.png);
     background-repeat: no-repeat;
@@ -47,7 +46,7 @@
     max-width: 945px;
     margin-top: 25px;
     font-size: 24px;
-    font-family: "AGHelveticaCyr";
+    font-family: "AGHelveticaCyr Roman", sans-serif;
 }
 
 .services-box {
@@ -73,5 +72,5 @@
     line-height: 136%;
     color: white;
     margin-bottom: 20px;
-    font-family: "AGHelveticaCyr";
+    font-family: "AGHelveticaCyr Roman", sans-serif;
 }

@@ -1,14 +1,13 @@
 @font-face {
-    font-family: 'AGHelveticaCyr';
-    src: url('../fonts/aghelveticacyrroman.ttf') format('truetype');
-    font-weight: 400;
+    font-family: "AGHelveticaCyr Roman";
+    src: url("../fonts/aghelveticacyr-roman/aghelveticacyr-roman.woff2") format("woff2");
+    font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/helveticaneuecyr_roman.otf') format('opentype');
-    font-weight: 400;
+    src: url('../fonts/helveticaneuecyr_roman.woff2') format('woff2');
     font-style: normal;
 }
 
@@ -21,21 +20,21 @@
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Regular.otf') format('opentype');
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Medium.otf') format('opentype');
+    src: url('../fonts/Inter-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-SemiBold.otf') format('opentype');
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
@@ -114,7 +113,6 @@ button {
 
 .banner {
     position: relative;
-    /* background-color: transparent; */
 }
 
 .header {
@@ -140,7 +138,7 @@ button {
 .nav-link a {
     color: white;
     text-transform: uppercase;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     font-size: 14px;
     margin-right: 40px;
 }
@@ -209,7 +207,7 @@ button {
 
 .contacts-box__title {
     color: white;
-    font-family: 'HelveticaNeueCyr';
+    font-family: 'HelveticaNeueCyr', sans-serif;
     font-size: 25px;
     line-height: 140%;
     margin-bottom: 24px;
@@ -218,7 +216,7 @@ button {
 
 .contacts-box__text {
     font-size: 20px;
-    font-family: "AGHelveticaCyr";
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     margin-bottom: 10px;
     color: white;
     line-height: 140%;
@@ -245,7 +243,7 @@ button {
 .footer__text {
     color: white;
     font-size: 12px;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
     color: white;
     line-height: 140%;
 }
@@ -311,7 +309,7 @@ button {
     font-size: 18px;
     line-height: 122%;
     border: none;
-    font-family: "AGHelveticaCyr", sans-serif;
+    font-family: "AGHelveticaCyr Roman", sans-serif;
 }
 
 .order-btn {
@@ -337,7 +335,6 @@ button {
 .agreement-square {
     -webkit-appearance: none;
     -moz-appearance: none;
-    /* убираем стандартный вид */
     appearance: none;
     width: 22px;
     height: 22px;
@@ -351,14 +348,40 @@ button {
     vertical-align: middle;
 }
 
-.agreement-square:checked::before {
-    content: '';
+.custom-checkbox input[type="checkbox"] {
     position: absolute;
-    left: 5px;
-    top: 3px;
-    width: 9px;
-    height: 9px;
-    border: solid white;
-    border-width: 0 1px 1px 0;
-    transform: rotate(45deg);
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkmark {
+    position: relative;
+    height: 22px;
+    width: 22px;
+    min-width: 22px;
+    background-image: url('unchecked.png');
+    background-size: contain;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-image: url(../img/checked.png);
+}
+
+.agreement-text {
+    color: white;
+    font-family: 'AGHelveticaCyr', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
 }

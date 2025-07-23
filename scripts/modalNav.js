@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const secondNavFirst = document.getElementById('secondNavFirst');
     const thirdNavFirst = document.getElementById('thirdNavFirst');
 
+    const navBack = document.querySelector('.nav-back__first');
+    const navSecondBack = document.querySelector('.nav-back__second');
+    const navThirdBack = document.querySelector('.nav-back__third');
+
     startBtn.addEventListener('click', function() {
         quizBox.style.display='none';
         firstStep.style.display='flex';
@@ -28,5 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
     thirdNavFirst.addEventListener('click', function() {
         thirdStep.style.display='none';
         fourthStep.style.display='block';
+    });
+
+    navBack.addEventListener('click', function() {
+        firstStep.style.display='none';
+        quizBox.style.display='flex';
+    });
+
+    navSecondBack.addEventListener('click', function() {
+        secondStep.style.display='none';
+        firstStep.style.display='flex';
+    });
+
+    navThirdBack.addEventListener('click', function() {
+        thirdStep.style.display='none';
+        secondStep.style.display='flex';
     });
 });

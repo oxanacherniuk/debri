@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/lux.css">
+    <title>Сауна Люкс</title>
+</head>
+<body>
+    <header class="banner">
+        <div class="header">
+            <div class="container">
+                <div class="header-box">
+                    <a href="" class="header-box__logo">
+                        <img src="img/logo_header.svg" alt="ДЕБРИ">
+                    </a>
+                    <ul class="header-box__nav">
+                        <li class="nav-link"><a href="">сауны</a></li>
+                        <li class="nav-link"><a href="">гостевой домик</a></li>
+                        <li class="nav-link"><a href="">гостевые номера</a></li>
+                        <li class="nav-link last"><a href="">спортивная комната</a></li>
+                    </ul>
+                    <div class="header-box__links">
+                        <a href=""><img src="img/vk_icon.svg" alt="VK"></a>
+                        <a href=""><img src="img/tg_icon.svg" alt="Telegram"></a>
+                        <div class="header-box__contacts">
+                            <a href="tel:+79272709208" class="header-number">+7 927 270-92-08</a>
+                            <a href="https://yandex.ru/maps/-/CHHWAN7Y" target="_blank" class="header-address">г. Ульяновск, ул. Галактионова, 41.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs-box">
+                    <li class="breadcrumbs-box__link"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumbs-box__link">/</li>
+                    <li class="breadcrumbs-box__link"><a href="" class="breadcrumbs-box__link">Сауны</a></li>
+                    <li class="breadcrumbs-box__link">/</li>
+                    <li class="breadcrumbs-box__link"><a href="" class="breadcrumbs-box__link">сауна люкс</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner-main">
+            <div class="container">
+                <div class="banner-info">
+                    <div class="banner-info__col">
+                        <h1 class="banner-info__title">Сауна люкс</h1>
+                        <div class="banner-info__opening">
+                            <p style="margin-bottom: 6px;">С 6.00 до 18.00 <span class="card-uppercase">4500 р/час</span></p>
+                            <p>С 18.00 до 6.00 <span class="card-uppercase"> 5500 р/час</span></p>
+                        </div>
+                        <button class="banner-info__btn">
+                            забронировать
+                        </button>
+                    </div>
+                    <div class="banner-info__col">
+                        <div class="stanchion">
+                            <div class="stanchion-line">
+                                <img src="img/people_icon.svg" alt="Иконка людей">
+                                <p>До 10 человек</p>
+                            </div>
+                            <div class="stanchion-line">
+                                <img src="img/fire_icon.svg" alt="Иконка огня">
+                                <p>Топится дровами
+                                по требованию
+                                Доплата 1000 рублей</p>
+                            </div>
+                            <div class="stanchion-line last">
+                                <img src="img/price_icon.svg" alt="Иконка стоимости">
+                                <p>За каждого следующего человека +10% от стоимости за каждый час <br>
+                                Дети до 3-х лет бесплатно
+                                </p>
+                            </div>
+                        </div>
+                        <button class="stanchion__btn" onclick="document.location='additionally.html'">
+                            дополнительные услуги
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="modal-overlay" id="reservationModal">
+            <div class="modal-content">
+                <div class="reservation active">
+                    <div class="container">
+                        <div class="reservation-inner">
+                            <button class="reservation-inner__close">
+                                <img src="img/close-light.svg" alt="Закрыть" srcset="">
+                            </button>
+                            <h2 class="reservation-inner__title title">Забронировать</h2>
+                            <p class="reservation-inner__subtitle">Оставьте заявку и администратор предложит Вам
+                                удобную дату и время для бронирования</p>
+                            <form action="" class="reservation-form" id="bookingForm">
+                                <div class="reservation-form__inputs">
+                                    <div class="input-wrapper">
+                                        <select class="reservation-form__input" name="service" id="servise-select" required>
+                                            <option value="">Выберите услугу</option>
+                                            <option value="lux">Сауна Люкс</option>
+                                            <option value="banya">Русская баня на дровах</option>
+                                            <option value="bigsayna">Большая сауна</option>
+                                            <option value="littlesayna">Малая сауна</option>
+                                            <option value="grechsyna">Греческая сауна</option>
+                                            <option value="gosthouse">Гостевой домик</option>
+                                            <option value="gostnom">Гостевой номер</option>
+                                            <option value="sportroom">Спортивно-игровая комната</option>
+                                        </select>
+                                        <div class="error-message"></div>
+                                    </div>
+        
+                                    <div class="input-wrapper">
+                                        <input type="text" placeholder="Введите имя" class="reservation-form__input" name="name"
+                                            id="name" required minlength="2">
+                                        <div class="error-message"></div>
+                                    </div>
+        
+                                    <div class="input-wrapper">
+                                        <input type="number" placeholder="Количество гостей" class="reservation-form__input"
+                                            name="guests" id="guests" required min="1" max="20">
+                                        <div class="error-message"></div>
+                                    </div>
+        
+                                    <div class="input-wrapper">
+                                        <input type="tel" placeholder="+7 (___) ___-____" class="reservation-form__input"
+                                            name="phone" id="phone" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                </div>
+                                <div class="agreement-box">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox" id="agreement" name="agreement" class="agreement-square">
+                                        <span class="checkmark"></span>
+                                        <span class="agreement-text">Я согласен(на) на обработку персональных данных и принимаю условия политики конфиденциальности.</span>
+                                    </label>
+                                    <div class="error-message agreement-error"></div>
+                                </div>
+                                <button type="submit" class="reservation-form__send-btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div class="container">
+                <h2 class="welcome__title title">Добро пожаловать в элитный комплекс <span class="color">"Сауна Люкс" -</span></h2>
+                <p class="welcome__subtitle subtitle">двухэтажный рай для истинных ценителей <br> комфорта и релаксации!</p>
+                <ul class="welcome-box">
+                    <li>Теплый бассейн</li>
+                    <li>Холодный бассейн</li>
+                    <li>Сауна</li>
+                    <li>Хамам</li>
+                    <li>Банкетный зал</li>
+                    <li>Комнаты релакса</li>
+                    <li>Бильярд</li>
+                </ul>
+                <div class="photo-box">
+                    <div class="photo-box__col">
+                        <div class="pool-box">
+                            <img src="img/welcome_1.png" alt="Галерея">
+                            <div class="pool-info">
+                                <div class="pool-info__left">
+                                    <img src="img/pool_icon.svg" alt="">
+                                    <p>t 28 - 30°С</p>
+                                </div>
+                                <div class="pool-info__right">
+                                    <p>Размер 10 х 4 м
+                                    Глубина 1,25 - 1,7 м.</p>
+                                    <p>Душ-шарко, эффект искусственной волны (противоток).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="welcome-photo__6" src="img/welcome_6.png" alt="Галерея">
+                    </div>
+                    <div class="photo-box__col">
+                        <div class="photo-box__row row">
+                            <img src="img/welcome_2.png" alt="Галерея">
+                            <img src="img/welcome_3.png" alt="Галерея">
+                        </div>
+                        <div class="photo-box__row lower row">
+                            <img src="img/welcome_4.png" alt="Галерея">
+                            <img src="img/welcome_5.png" alt="Галерея">
+                        </div>
+                        <img src="img/welcome_7.png" class="welcome-photo__7" alt="Галерея">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="oasis">
+            <div class="container">
+                <h2 class="oasis__title title">Оазис блаженства в самом сердце города – «Сауна Люкс»</h2>
+                <div class="oasis-box">
+                    <p>
+                        На просторной территории более 200 кв.м вас ожидает настоящее путешествие в мир блаженства.
+                        В центре композиции – изысканная сауна из благородного канадского кедра с завораживающим панно из гималайской соли,
+                        создающим особую атмосферу умиротворения и наполняющим пространство целебными ионами.
+                        <br><br>
+                        Любителям водных процедур предлагаем на выбор: нежиться в теплом бассейне, освежаться в прохладной купели или
+                        наслаждаться массажными струями джакузи. А восточная экзотика хаммама дополнит вашу программу оздоровления.
+                    </p>
+                    <p>
+                        После парных процедур вас ждет роскошный банкетный зал с мягкой кожаной мебелью, массажным креслом и домашним
+                        кинотеатром, оснащенным трехметровым экраном и FullHD-проектором. Потрескивающий дровяной камин создаст неповторимую
+                        атмосферу уюта для вашей компании.
+                        <br><br>
+                        Для полного восстановления сил предусмотрены уединенные комнаты релаксации. А энергичным гостям придется по душе
+                        спортивная комната, оснащенная теннисным столом.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <h2 class="catalog__title title">Вам может понравиться</h2>
+                <div class="catalog-box">
+                    <a class="catalog-card">
+                        <div class="catalog-card__top">
+                            <img src="img/catalog_1.png" alt="русская баня">
+                            <p>русская баня
+                            на дровах</p>
+                        </div>
+                        <div class="catalog-card__bottom">
+                            <p class="catalog-card__description">до 6 человек</p>
+                            <p class="catalog-card__description">Площадь сауны 170 кв.м</p>
+                            <div class="catalog-info__opening">
+                                <p style="margin-bottom: 6px;">С 6.00 до 18.00 <span class="card-uppercase">3500 р/час</span></p>
+                                <p>С 18.00 до 6.00 <span class="card-uppercase"> 4000 р/час</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="catalog-card">
+                        <div class="catalog-card__top">
+                            <img src="img/catalog_2.png" alt="">
+                            <p>большая сауна</p>
+                        </div>
+                        <div class="catalog-card__bottom">
+                            <p class="catalog-card__description">до 10 человек</p>
+                            <p class="catalog-card__description">Площадь сауны 200 кв.м</p>
+                            <div class="catalog-info__opening">
+                                <p style="margin-bottom: 6px;">С 6.00 до 18.00 <span class="card-uppercase">3800 р/час</span></p>
+                                <p>С 18.00 до 6.00 <span class="card-uppercase"> 4500 р/час</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="catalog-card">
+                        <div class="catalog-card__top">
+                            <img src="img/catalog_3.png" alt="">
+                            <p>малая сауна</p>
+                        </div>
+                        <div class="catalog-card__bottom">
+                            <p class="catalog-card__description">до 6 человек</p>
+                            <p class="catalog-card__description">Площадь сауны 100 кв.м</p>
+                            <div class="catalog-info__opening">
+                                <p style="margin-bottom: 6px;">С 6.00 до 18.00 <span class="card-uppercase">3500 р/час</span></p>
+                                <p>С 18.00 до 6.00 <span class="card-uppercase"> 4500 р/час</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="catalog-card">
+                        <div class="catalog-card__top">
+                            <img src="img/catalog_4.png" alt="">
+                            <p>греческая сауна</p>
+                        </div>
+                        <div class="catalog-card__bottom">
+                            <p class="catalog-card__description">до 10 человек</p>
+                            <p class="catalog-card__description">Площадь сауны 200 кв.м</p>
+                            <div class="catalog-info__opening">
+                                <p style="margin-bottom: 6px;">С 6.00 до 18.00 <span class="card-uppercase">3800 р/час</span></p>
+                                <p>С 18.00 до 6.00 <span class="card-uppercase"> 4500 р/час</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts__title title">контакты</h2>
+                <img src="img/logo_header.svg" alt="ДЕБРИ" class="contacts__logo">
+                <div class="contacts-box">
+                    <div class="contacts-box__col first">
+                        <p class="contacts-box__title">Адрес</p>
+                        <p class="contacts-box__text">г. Ульяновск, <br> ул. Галактионова, 41.</p>
+                        <p class="contacts-box__text">тел +7 927 270-92-08</p>
+                        <p class="contacts-box__text">debrisaun@mail.ru</p>
+                        <div class="contacts-box__socials">
+                            <a href="" class="vk_icon"><img src="img/vk_icon.svg" alt="VK"></a>
+                            <a href=""><img src="img/tg_icon.svg" alt="Telegram"></a>
+                        </div>
+                    </div>
+                    <div class="contacts-box__col">
+                        <div style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/org/debri/148293410018/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Дебри</a>
+                            <a href="https://yandex.ru/maps/195/ulyanovsk/category/guest_house/131994109947/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Гостевой дом в Ульяновске</a>
+                            <iframe class="cart"
+                                src="https://yandex.ru/map-widget/v1/?ll=48.381004%2C54.332376&mode=poi&poi%5Bpoint%5D=48.379990%2C54.332246&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D148293410018&z=18.3"
+                                frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                        </div>
+                    </div>
+                    <div class="contacts-box__col">
+                        <img src="img/contacts_img.png" alt="ДЕБРИ" class="contacts-box__photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                2025 © «ДЕБРИ». Все права защищены <br> Сайт не является публичной офертой и носит информационный характер.
+                <br>
+                Политика конфиденциальности
+            </p>
+        </div>
+    </footer>
+    
+    <div class="contact-btn">
+        <button class="contact-btn__btn">
+            <img src="img/contact-btn.svg" alt="Заказать звонок">
+        </button>
+        <form class="contact-btn__box">
+            <input placeholder="+ 7 Ваш телефон" class="contact-btn__input" type="tel" name="tel" id="tel">
+            <button class="order-btn" type="button">
+                <img src="img/order-btn.svg" alt="Заказать звонок">
+                <p>Заказать звонок</p>
+            </button>
+            <button class="close-btn" type="button">
+                <img src="img/close-light.svg" alt="Закрыть">
+            </button>
+        </form>
+    </div>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/validation.js"></script>
+    <!-- <script src="scripts/hover.js"></script> -->
+</body>
+</html>
