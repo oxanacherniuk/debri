@@ -216,7 +216,6 @@
 
 .first-step, .second-step, .third-step, .fourth-step {
     display: none;
-    /* меняется */
 }
 
 .first-step {
@@ -420,6 +419,31 @@
 
 .quiz-box__title.fourth {
     max-width: 100%;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #FB0909;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none;
+    font-family: 'AGHelveticaCyr', sans-serif;
+}
+
+.fourth-step__input.error {
+    border: 2px solid #FB0909 !important;
+}
+
+.agreement-error {
+    margin-left: 30px;
+}
+
+.fourth-step__input[type="tel"] {
+    letter-spacing: 1px;
 }
 
 /* about */

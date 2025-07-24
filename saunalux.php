@@ -35,7 +35,7 @@
         <div class="breadcrumbs">
             <div class="container">
                 <ul class="breadcrumbs-box">
-                    <li class="breadcrumbs-box__link"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumbs-box__link"><a href="index.php">Главная</a></li>
                     <li class="breadcrumbs-box__link">/</li>
                     <li class="breadcrumbs-box__link"><a href="" class="breadcrumbs-box__link">Сауны</a></li>
                     <li class="breadcrumbs-box__link">/</li>
@@ -75,7 +75,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button class="stanchion__btn" onclick="document.location='additionally.html'">
+                        <button class="stanchion__btn" onclick="document.location='additionally.php'">
                             дополнительные услуги
                         </button>
                     </div>
@@ -89,7 +89,7 @@
             <div class="modal-content">
                 <div class="reservation active">
                     <div class="container">
-                        <div class="reservation-inner">
+                        <div class="reservation-inner done-main">
                             <button class="reservation-inner__close">
                                 <img src="img/close-light.svg" alt="Закрыть" srcset="">
                             </button>
@@ -343,7 +343,8 @@
     </div>
     <script src="scripts/form.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/jquery3.7.1.js"></script>
     <script src="scripts/validation.js"></script>
-    <!-- <script src="scripts/hover.js"></script> -->
+    <script src="scripts/hover.js"></script>
 </body>
 </html>

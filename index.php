@@ -16,10 +16,10 @@
                         <img src="img/logo_header.svg" alt="ДЕБРИ">
                     </a>
                     <ul class="header-box__nav">
-                        <li class="nav-link"><a href="">сауны</a></li>
-                        <li class="nav-link"><a href="">гостевой домик</a></li>
-                        <li class="nav-link"><a href="">гостевые номера</a></li>
-                        <li class="nav-link last"><a href="">спортивная комната</a></li>
+                        <li class="nav-link" data-category="sauna"><a href="#">сауны</a></li>
+                        <li class="nav-link" data-category="house"><a href="#">гостевой домик</a></li>
+                        <li class="nav-link" data-category="rooms"><a href="#">гостевые номера</a></li>
+                        <li class="nav-link last" data-category="sport"><a href="#">спортивная комната</a></li>
                     </ul>
                     <div class="header-box__links">
                         <a href=""><img src="img/vk_icon.svg" alt="VK"></a>
@@ -165,15 +165,25 @@
                                     <h2 class="quiz-box__title fourth title">Всего один шаг до подбора лучшего варианта <br> для отдыха вашей компании
                                     </h2>
                                     <p class="fourth-step__text">Оставьте свои контактные данные и вы получите персональное предложение в течение 30 минут</p>
-                                    <form action="" class="fourth-step__form">
-                                        <input placeholder="Введите имя" type="text" class="fourth-step__input">
-                                        <input placeholder="+7 (___) - __ - __" type="text" class="fourth-step__input">
-                                        <button class="fourth-step__btn">отправить</button>
+                                    <form action="" class="fourth-step__form" id="validationForm">
+                                        <div class="input-wrapper">
+                                            <input placeholder="Введите имя" type="text" class="fourth-step__input" id="nameInput" required minlength="2">
+                                            <div class="error-message"></div>
+                                        </div>
+                                    
+                                        <div class="input-wrapper">
+                                            <input placeholder="+7 (___) ___-____" type="tel" class="fourth-step__input" id="phoneInput" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    
+                                        <button type="submit" class="fourth-step__btn">отправить</button>
+                                    
                                         <div class="agreement-box">
                                             <label class="custom-checkbox">
-                                                <input type="checkbox" id="agreement" name="agreement" class="agreement-square">
+                                                <input type="checkbox" id="agreement" name="agreement" class="agreement-square" required>
                                                 <span class="checkmark"></span>
-                                                <span class="agreement-text">Я согласен(на) на обработку персональных данных и принимаю условия политики конфиденциальности.</span>
+                                                <span class="agreement-text">Я согласен(на) на обработку персональных данных и принимаю условия политики
+                                                    конфиденциальности.</span>
                                             </label>
                                             <div class="error-message agreement-error"></div>
                                         </div>
@@ -211,7 +221,7 @@
                     </div>
                 </div>
                 <div class="about-cards">
-                    <a class="about-card sauna" href="saunalux.html">
+                    <a class="about-card sauna" href="saunalux.php">
                         <img src="img/sauna_photo1.png" class="card-photo">
                         <div class="card-billet">
                             <img src="img/people_icon.svg" class="card-billet__icon">
@@ -666,5 +676,6 @@
     <script src="scripts/sorting.js"></script>
     <script src="scripts/modalQuiz.js"></script>
     <script src="scripts/modalNav.js"></script>
+    <script src="scripts/miniFormValid.js"></script>
 </body>
 </html>

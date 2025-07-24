@@ -237,7 +237,6 @@ select.reservation-form__input {
 @-moz-document url-prefix() {
     .styled-select select {
         padding-right: 30px;
-        /* Делаем место для стрелки */
     }
 }
 
@@ -284,7 +283,6 @@ select.reservation-form__input {
     color: #000;
 }
 
-/* cтилизация стрелки у select */
 select.reservation-form__input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -306,7 +304,7 @@ select.reservation-form__input::-ms-expand {
 }
 
 .error-message {
-    color: #ff0000;
+    color: #FB0909;
     font-size: 14px;
     margin-top: 8px;
     display: none;
@@ -318,7 +316,7 @@ select.reservation-form__input::-ms-expand {
 }
 
 .reservation-form__input.error {
-    border: 2px solid #ff0000 !important;
+    border: 2px solid #FB0909 !important;
 }
 
 .reservation-form__input[type="tel"] {
@@ -362,39 +360,59 @@ span.color {
     margin-top: 80px;
     display: flex;
     gap: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.pool-container {
+    position: relative;
+    width: 1025px;
+    height: auto;
 }
 
 .pool-box {
     cursor: pointer;
     position: relative;
     z-index: 1;
-    transition: all 0.3s ease;
+    width: 100%;
+    transition: transform 0.3s ease;
+    transform-origin: left center;
 }
 
-/* .pool-box:hover::before {
+.pool-box:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    position: absolute; 
+    left: 0;
+    top: 0;
+
+}
+
+.pool-box:hover::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: rgba(51, 51, 51, 0.82);
     z-index: 2;
-} */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+} 
 
-/* .pool-box:hover img[src="img/welcome_1.png"] {
+.pool-box:hover img[src="img/welcome_1.png"] {
     width: 1125px;
     z-index: 3;
     position: relative;
-} */
+}
 
-/* .pool-box:hover .pool-info {
+.pool-box:hover .pool-info {
     display: flex;
     z-index: 4;
-} */
+}
 
 .pool-box img {
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: block;
 }
 
@@ -451,6 +469,23 @@ span.color {
 
 .welcome-photo__7 {
     margin-top: 24px;
+}
+
+.photo-box__col img:not(.pool-box img),
+.photo-box__row img {
+    position: relative;
+    z-index: 1;
+    transition: none !important;
+}
+
+.photo-box__col img:not(.pool-box img),
+.photo-box__row img,
+.welcome-photo__6,
+.welcome-photo__7 {
+    position: static;
+    transform: none !important;
+    transition: none !important;
+    pointer-events: none;
 }
 
 /* oasis */
